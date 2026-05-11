@@ -1,0 +1,94 @@
+<div class="phone">
+    <div class="header">
+        <i class="fa-solid fa-arrow-left"></i>
+        List a Textbook
+        <div style="width: 20px;"></div>
+    </div>
+
+    <div class="content">
+        <div class="upload-area">
+            <i class="fa-solid fa-camera"></i>
+            <p>TAP TO SCAN ISBN OR UPLOAD IMAGE</p>
+            <span>ISBN scanning auto-fills book details.</span>
+        </div>
+
+        <div class="form-group">
+            <label>Title <span class="required">*</span></label>
+            <input type="text" class="form-control" placeholder="Book title">
+            <div class="error-text"><i class="fa-solid fa-circle-exclamation"></i> Required field</div>
+        </div>
+
+        <div class="form-group">
+            <label>Edition <span class="required">*</span></label>
+            <input type="text" class="form-control" placeholder="e.g. 9th Edition">
+        </div>
+
+        <div class="form-group">
+            <label>Module Code <span class="required">*</span></label>
+            <input type="text" class="form-control" placeholder="e.g. INF3A">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group half-width">
+                <label>Asking Price (R) <span class="required">*</span></label>
+                <input type="number" class="form-control" placeholder="e.g. 550">
+            </div>
+            <div class="form-group half-width">
+                <label>Swap For (Optional)</label>
+                <input type="text" class="form-control" placeholder="e.g. INF3B">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Condition <span class="required">*</span></label>
+            <select class="form-control">
+                <option value="" disabled selected>Select Condition</option>
+                <option value="new">Brand New</option>
+                <option value="like-new">Like New</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair / Heavily Used</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Seller Note</label>
+            <textarea class="form-control" rows="3" placeholder="Meeting location, availability, additional details"></textarea>
+        </div>
+
+        <div class="preview-section">
+            <h3 class="section-title">Listing Preview</h3>
+            <div class="preview-card">
+                <div class="preview-placeholder">Image Preview</div>
+                <div class="preview-details">
+                    <div class="preview-title">[ Title ]</div>
+                    <div class="preview-subtitle">[ Module ] • [ Condition ]</div>
+                    <div class="preview-price">[ Price ]</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" style="width: 100%; margin-bottom: 12px;">POST LISTING</button>
+        <button class="btn-outline-dashed">SAVE AS DRAFT</button>
+        
+        <div style="height: 20px;"></div>
+    </div>
+
+    <div class="nav">
+        <div class="nav-item">
+            <i class="fa-solid fa-house"></i>
+            Home
+        </div>
+        <div class="nav-item active">
+            <i class="fa-solid fa-plus-circle"></i>
+            Sell
+        </div>
+        <div class="nav-item">
+            <i class="fa-solid fa-comment-dots"></i>
+            Chats
+        </div>
+        <div class="nav-item">
+            <i class="fa-solid fa-user"></i>
+            Profile
+        </div>
+    </div>
+</div>

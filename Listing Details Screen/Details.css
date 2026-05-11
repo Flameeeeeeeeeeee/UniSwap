@@ -1,0 +1,268 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #F5F7FA;
+    display: flex;
+    justify-content: center;
+}
+
+.phone {
+    width: 390px;
+    height: 844px;
+    background: white;
+    margin: 30px auto;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 20px;
+    background: #2E3A8C;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header i {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    background: #F5F7FA;
+}
+
+.image-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.condition-badge {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.fav-btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F43F5E;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.fav-btn i {
+    color: #F43F5E;
+    font-size: 18px;
+}
+
+.fav-btn:hover {
+    background: #F43F5E;
+}
+
+.fav-btn:hover i {
+    color: white;
+}
+
+.title-section {
+    margin-bottom: 24px;
+}
+
+.title-section h2 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    color: #111827;
+}
+
+.title-section p {
+    margin: 0;
+    color: #6B7280;
+    font-size: 15px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 12px 0;
+}
+
+.info-card {
+    background: white;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    margin-bottom: 24px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.info-row:last-child {
+    margin-bottom: 0;
+}
+
+.info-label {
+    color: #6B7280;
+}
+
+.info-value {
+    color: #111827;
+    font-weight: 500;
+    text-align: right;
+}
+
+.rating {
+    color: #F59E0B;
+}
+
+.seller-note-text {
+    font-size: 14px;
+    color: #4B5563;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.price-section {
+    margin-bottom: 24px;
+}
+
+.price-section h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #111827;
+}
+
+.action-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.btn {
+    flex: 1;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.1s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background: #4F46E5;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.btn-secondary {
+    background: white;
+    color: #4F46E5;
+    border: 2px solid #4F46E5;
+}
+
+.btn-outline-dashed {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    background: transparent;
+    color: #6B7280;
+    border: 2px dashed #D1D5DB;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-dashed:hover {
+    border-color: #9CA3AF;
+    color: #4B5563;
+}
+
+.btn-danger-dashed {
+    color: #EF4444;
+    border-color: #FECACA;
+}
+
+.btn-danger-dashed:hover {
+    border-color: #EF4444;
+    background: #FEF2F2;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    border-top: 1px solid #eee;
+    background: white;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #888;
+    cursor: pointer;
+}
+
+.nav-item i {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.nav-item.active {
+    color: #4F46E5;
+    font-weight: 600;
+}
